@@ -2,9 +2,9 @@ import 'dotenv/config' //Permite utilizar variables de entorno
 import express from 'express'//modulo que simplica la creacion aplic web
 import { __dirname } from './path.js'//directorio actual del archivo
 import path from 'path'//modulo de node.js para manejar rutas
-import userRouter from './routes/user.routes.js'
 import mongoose from 'mongoose'
 import config from "./config.js";
+import router from './routes/main.routes.js'
 
 const PORT = 8080 //numero de puerto
 const app = express() //aplicación principal de Express que configuraremos con rutas y middleware.
@@ -25,7 +25,7 @@ mongoose.connect(config.mongoURL)
 
 //Routes
 app.use('/static', express.static(path.join(__dirname, '/public')))//se utiliza para servir archivos estáticos desde el directorio 'public'.
-app.use('/api/users',userRouter)
+app.use('/',router)
 
 //console.log(path.join(__dirname, '/public'))
 

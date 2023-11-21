@@ -1,0 +1,32 @@
+ [
+    {
+      "name": "Robles Duffy",
+      "price": 35,
+      "feature": true,
+      "company": "ikea"
+    },
+    {
+      "name": "Angel Glenn",
+      "price": 31,
+      "feature": false,
+      "company": "liddy"
+    },
+    {
+      "name": "Spence Holcomb",
+      "price": 33,
+      "feature": false,
+      "company": "ikea"
+    },
+    {
+      "name": "Nola Brennan",
+      "price": 30,
+      "feature": true,
+      "company": "caressa"
+    },
+    {
+      "name": "Griffith Henderson",
+      "price": 25,
+      "feature": false,
+      "company": "marcos"
+    }
+  ]
